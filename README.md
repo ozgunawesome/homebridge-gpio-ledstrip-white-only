@@ -4,7 +4,7 @@
 # Installation
 
 1. Install homebridge using: npm install -g homebridge
-2. Install this plugin using: npm install -g homebridge-gpio-ledstrip
+2. Install this plugin using: npm install -g homebridge-gpio-ledstrip-white-only
 3. Update your configuration file. See sample config.json snippet below. 
 
 # Configuration
@@ -14,11 +14,9 @@ Configuration sample:
  ```
     "accessories": [
       {
-        "accessory": "GPIORGBLEDStrip",
+        "accessory": "GPIOWhiteLEDStrip",
         "name": "Kitchen Cabinet Strip",
-        "redPin": 22,
-        "greenPin": 27,
-        "bluePin": 17
+        "pin": 22
       }
     ]
 ```
@@ -27,6 +25,4 @@ Fields:
 
 * "accessory": Must always be "GPIORGBLEDStrip" (required)
 * "name": Can be anything (required)
-* "redPin": GPIO pin that is used to set red value (required)
-* "greenPin": GPIO pin that is used to set green value (required)
-* "bluePin": GPIO pin that is used to set blue value (required)
+* "pin": GPIO pin that is used to set value (required)

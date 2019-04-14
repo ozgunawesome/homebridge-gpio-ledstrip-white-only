@@ -1,10 +1,10 @@
 {
-  "name": "homebridge-gpio-ledstrip",
-  "description": "Raspberry Pi GPIO based LED Strip plugin for Homebridge",
-  "version": "0.0.2",
+  "name": "homebridge-gpio-ledstrip-white-only",
+  "description": "Raspberry Pi GPIO based LED Strip plugin for Homebridge but white only",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
-    "url": "git://github.com/giniae/homebridge-gpio-ledstrip.git"
+    "url": "https://github.com/ozgunawesome/homebridge-gpio-ledstrip-white-only.git"
   },
   "main2": "dist/index.js",
   "types2": "dist/index.d.ts",
@@ -14,7 +14,7 @@
     "homebridge-plugin",
     "homebridge",
     "led",
-    "rgb",
+    "white",
     "led strip",
     "raspberry",
     "pi",
@@ -25,11 +25,9 @@
     "homebridge": ">=0.2.5"
   },
   "dependencies": {
-    "color-convert": "1.9.0",
     "pigpio": "0.6.2"
   },
   "devDependencies": {
-    "@types/color-convert": "^1.9.0",
     "@types/node": "^8.0.46",
     "@types/pigpio": "^0.4.1",
     "typescript": "^2"

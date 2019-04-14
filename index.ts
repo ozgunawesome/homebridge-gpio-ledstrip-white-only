@@ -1,7 +1,4 @@
-
-/// <reference types="color-convert" />
-import * as converter from 'color-convert'; 
-import GPIORGBLEDStripAccessory from "./lib/GPIORGBLEDStripAccessory"; 
+import GPIOWhiteLEDStripAccessory from "./lib/GPIOWhiteLEDStripAccessory"; 
 import {Gpio} from "pigpio"; 
 
 module.exports = function (homebridge) {
@@ -12,7 +9,7 @@ module.exports = function (homebridge) {
     uuid: homebridge.hap.uuid,
   };
 
-   GPIORGBLEDStripAccessory.init(exportTypes);
+  GPIOWhiteLEDStripAccessory.init(exportTypes);
 
-  homebridge.registerAccessory("homebridge-gpio-ledstrip", "GPIORGBLEDStrip", GPIORGBLEDStripAccessory);
+  homebridge.registerAccessory("homebridge-gpio-ledstrip-white-only", "GPIOWhiteLEDStrip", GPIOWhiteLEDStripAccessory);
 };
